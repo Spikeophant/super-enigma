@@ -1,0 +1,22 @@
+{
+  "name": "super-enigma",
+  "version": "1.0.0",
+  "description": "Just another weather site.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Spikeophant/super-enigma.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Spikeophant/super-enigma/issues"
+  },
+  "homepage": "https://github.com/Spikeophant/super-enigma#readme",
+  "devDependencies": {
+    "eslint": "^8.21.0"
+  }
+}
