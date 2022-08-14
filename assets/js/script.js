@@ -59,6 +59,8 @@ function fiveDayCard(city) {
         .then(function (response) {
             if (!response.ok) {
                 console.log(response.statusText);
+                alert(response.statusText);
+                throw new Error('respoonse.status');
             }
             return response.json();
         }).then(function(data) {
