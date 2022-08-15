@@ -33,6 +33,7 @@ function currentWeatherCard(city) {
         console.log(data);
         var cwRow = document.getElementById('weatherNow');
         var cwIcon = document.createElement('img');
+        var curWeaHeader = document.createElement('h4');
         var curWea = document.createElement('p');
         var curTemp = document.createElement('p');
         var curWind = document.createElement('p');
@@ -42,8 +43,10 @@ function currentWeatherCard(city) {
         curWind.textContent = 'Wind: ' + data.wind.speed;
         curHumidity.textContent = 'Humidity: ' + data.main.humidity;
         cwIcon.src = 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png';
-        curWea.textContent = data.name + '   ' + Date(Date.now()).toString();
-        curWea.append(cwIcon);
+        curWea.textContent = Date(Date.now()).toString();
+        curWeaHeader.textContent = data.name;
+        curWeaHeader.append(cwIcon);
+        cwRow.append(curWeaHeader);
         cwRow.append(curWea);
         cwRow.append(curTemp);
         cwRow.append(curWind);
